@@ -1,0 +1,14 @@
+include falcon.io
+mktmp
+write @tmp hello;ws;
+write @tmp world;endl;
+write @tmp !1 + 1!
+write @console ;read @tmp;;endl;yay\!;endl;
+write @vars x ;consolein;
+clrtmp
+consoleout
+clrfile @console
+write @console hey
+write @console $x
+consoleout
+::comment
