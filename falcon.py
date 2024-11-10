@@ -13,9 +13,8 @@ def run_file(filename):
 
 
 if __name__ == "__main__":
-    run_file("test.fa")
-    """if len(sys.argv) != 2:
+    if len(sys.argv) != 2:
         print("Usage: snowsnake <filename>")
     else:
         filename = sys.argv[1]
-        run_file(filename)"""
+        run_file(filename)
