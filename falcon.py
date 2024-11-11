@@ -14,7 +14,7 @@ def run_file(filename):
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print("Usage: snowsnake <filename>")
+        print("Usage: falcon.py <filename>")
     else:
         filename = sys.argv[1]
         run_file(filename)
