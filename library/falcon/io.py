@@ -1,7 +1,11 @@
-import pathlib
-def consoleout():
-    with open(str(pathlib.Path(__file__).parent.resolve())+"/../../console", "r") as console:
-        print(console.read(), end="")
-def consolein():
+from compile import string
+
+def writeln(*args):
+    """Print with expansion."""
+    writetext = string(" ".join(args))
+    print(writetext)
+    return ".voidobj"
+
+def readln():
+    """Read input from user."""
     return input()
-#consoleout()
