@@ -140,7 +140,7 @@ def run_line(parts):
         include(args[0])
         return ".voidobj"
 
-    elif com == "let":
+    if com == "let":
         if len(args) >= 1 and "=" in args[0]:
             # form: let x=5
             name, val = args[0].split("=", 1)

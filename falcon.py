@@ -10,6 +10,7 @@ def run_file(filename):
     with open(filename, "r") as f:
         code = f.read()
         run(code)
+    raise SystemExit(0)
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
